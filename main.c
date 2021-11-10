@@ -15,6 +15,8 @@ static void sighandler(int signo){
     }
     else if (signo == SIGUSR1){
         printf("parent pid: %d\n", getppid());
+        // running $ kill -30 [pid] gives me this error?
+        // make: *** [makefile:11: run] Power failure
     }
 }
 
